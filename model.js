@@ -10,8 +10,38 @@ const model = {
         createPoll: {
             title: '',
             question: '',
-            answer: '',
+            answer1: '',
+            answer2: '',
+            answer3: '',
             customIsChecked: false,
+        },
+
+        /*
+        
+                    id: 1,
+            title: '',
+            url: '',
+            activePoll: true,
+            question: [
+                {
+                    qText: 'test',
+                    customIsChecked: false,
+                    aText: ['ja','nei','aner ikke'],
+                }
+            ]
+        
+        */
+
+        newPoll: {
+            title: '',
+            activePoll: true,
+            questions: [],
+
+            newQuestion: {
+                text: '',
+                isChecked: false,
+                answers: []
+            }
         },
 
         chooseDate: {
@@ -36,12 +66,25 @@ const model = {
             activePoll: true,
             question: [
                 {
-                    qText: '',
-                    customIsChecked: false,
-                    aText: ['', '', '',],
+                    qText: 'test',
+                    // customIsChecked: false,
+                    aText: ['ja','nei','aner ikke'],
                 }
             ]
-        }
+        },
+        {
+            id: 1,
+            title: '',
+            url: '',
+            activePoll: true,
+            question: [
+                {
+                    qText: 'test',
+                    // customIsChecked: false,
+                    aText: ['ja','nei','aner ikke'],
+                }
+            ]
+        },
     ],
 
     pollData: [
@@ -57,6 +100,12 @@ const model = {
             ]
         }
     ],
+
+    tempValues:{
+        title:'',
+        question:'',
+        answer:[],
+    },
 
     userAnswers: [
         {

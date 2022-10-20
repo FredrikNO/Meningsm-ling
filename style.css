@@ -1,0 +1,26 @@
+body{
+    margin:auto;
+}
+
+.title{
+    text-align: center;
+    margin: 50px;
+}
+
+.questionInput {
+    margin: 10px;
+    width: 200px;
+}
+
+.answerInput{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    margin: 10px;
+}
+
+.addQ{
+    margin: 10px;
+}
