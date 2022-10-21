@@ -61,20 +61,7 @@ const model = {
     poll: [
         {
             id: 1,
-            title: '',
-            url: '',
-            activePoll: true,
-            question: [
-                {
-                    qText: 'test',
-                    // customIsChecked: false,
-                    aText: ['ja','nei','aner ikke'],
-                }
-            ]
-        },
-        {
-            id: 1,
-            title: '',
+            title: '1 poll',
             url: '',
             activePoll: true,
             question: [
@@ -102,9 +89,7 @@ const model = {
     ],
 
     tempValues:{
-        title:'',
-        question:'',
-        answer:[],
+        currentPollNumber:0
     },
 
     userAnswers: [
